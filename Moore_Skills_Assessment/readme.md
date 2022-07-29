@@ -2,4 +2,4 @@ The skills assessent employs HTML, CSS, and JavaScript to render a general conta
 
 All other functionality is present.
 
-https://dav1dmoore.github.io/MooreDesignsExample/skills-assessment/Moore_Skills_Assessment/skills-assessment
+https://dav1dmoore.github.io/skills-assessment/Moore_Skills_Assessment/skills-assessment

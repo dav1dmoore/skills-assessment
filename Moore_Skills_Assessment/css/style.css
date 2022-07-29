@@ -1,0 +1,137 @@
+/* Browser Reset */
+* {
+    margin:0;
+    padding:0;
+}
+
+
+/*General Body Style Set */
+body {
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+
+/* Layout Placement */
+.container {
+    width: 300px;
+}
+
+
+/* Header Style */
+#header {
+    background-color: #323232;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header > h1 {
+    font-size: large;
+    padding: 15px;
+}
+
+
+/* Contact Status Style */
+.circle {
+    border-radius: 50%;
+    height: 8px;
+    margin: 10px;
+    width: 8px;
+}
+
+.flx {
+    display: flex;
+    align-items: center;
+}
+
+.family {
+    background-color: yellow;
+}
+
+.friend {
+    background-color: green;
+}
+
+.client {
+    background-color: red;
+}
+
+.info {
+    width: 100px;
+}
+
+
+/* Table Style */
+table {
+    background-color: black;
+    border-collapse: collapse;
+}
+tr {
+    border-bottom: 1px solid #131313;
+}
+
+
+/* Alternating Colors in the Table */
+tr:nth-child(odd){
+    background-color: #212121;
+}
+tr:nth-child(even){
+    background-color: #1A1A1A;
+}
+
+
+/* Table Class Styles */
+.size {
+    padding: 10px;
+    text-align: center;
+    width: 70%;
+}
+.name {
+    padding: 10px;
+}
+.number, .email{
+    color: #4F4F4F !important;
+    height:auto;
+}
+.info {
+    text-align: center;
+}
+
+
+/* Footer-Input Style */
+#footer {
+    background-color: #323232;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer > select {
+    border-radius: 5px;
+    font-size: small;
+    margin: 15px;
+}
+
+
+/* Hide Style */
+.hide {
+    display: none;
+}
+
+/* Selected Style */
+.selected {
+    background-color: #484848;
+    border-bottom: none !important;
+}
+
+.notSelected {
+    background-color: black !important;
+    border-bottom:none;
+    opacity: .2;
+}

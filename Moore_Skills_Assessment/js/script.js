@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let nameData = document.getElementsByClassName('name');
     let contactNumbers = document.getElementsByClassName('number');
     let rowSelect = document.getElementsByClassName('selected');
+    let tableBdy = document.querySelector('#tbl');
     
     // Create Auto-Incrementing ID
     let num = 0;
@@ -18,14 +19,14 @@ document.addEventListener("DOMContentLoaded", function(){
 
     //Create Contact Objects
     let contacts = [
-        {id:`${incrementID()}`, name: 'Christian', number: '509-123-4567', email: 'christian@yahoo.com', street:'6539 Wilton Ave.', city:'Spokane', state:'WA', zipcode:'99201'},
-        {id:`${incrementID()}`, name: 'Rich', number: '509-891-0123', email: 'rich@aol.com', street:'6539 Wilton Ave.', city:'Spokane', state:'WA', zipcode:'99201'},
-        {id:`${incrementID()}`, name: 'Scott', number: '509-456-7891', email: 'scottn@mailinator.com', street:'6539 Wilton Ave.', city:'Spokane', state:'WA', zipcode:'99201'},
-        {id:`${incrementID()}`, name: 'Danny', number: '509-101-2345', email: 'danny@yahoo.com', street:'6539 Wilton Ave.', city:'Spokane', state:'WA', zipcode:'99201'},
-        {id:`${incrementID()}`, name: 'Taka', number: '509-101-2345', email: 'taka@myspace.com', street:'6539 Wilton Ave.', city:'Spokane', state:'WA', zipcode:'99201'},
-        {id:`${incrementID()}`, name: 'Tim', number: '509-101-2345', email: 'tim@netscape.com', street:'6539 Wilton Ave.', city:'Spokane', state:'WA', zipcode:'99201'},
-        {id:`${incrementID()}`, name: 'Patrick', number: '509-101-2345', email: 'patrick@live.com', street:'6539 Wilton Ave.', city:'Spokane', state:'WA', zipcode:'99201'},
-        {id:`${incrementID()}`, name: 'Jacques', number: '509-101-2345', email: 'jacques@aol.com', street:'6539 Wilton Ave.', city:'Spokane', state:'WA', zipcode:'99201'}
+        {id:`${incrementID()}`, name: 'Christian', number: '555-555-5555', email: 'christian@yahoo.com', street:'6539 Wilton Ave.', city:'Culver City', state:'CA', zipcode:'90234'},
+        {id:`${incrementID()}`, name: 'Rich', number: '555-555-5555', email: 'rich@tripod.com', street:'6539 Wilton Ave.', city:'Culver City', state:'CA', zipcode:'90234'},
+        {id:`${incrementID()}`, name: 'Scott', number: '555-555-5555', email: 'scottn@mailinator.com', street:'6539 Wilton Ave.', city:'Culver City', state:'CA', zipcode:'90234'},
+        {id:`${incrementID()}`, name: 'Danny', number: '555-555-5555', email: 'danny@hotmail.com', street:'6539 Wilton Ave.', city:'Culver City', state:'CA', zipcode:'90234'},
+        {id:`${incrementID()}`, name: 'Taka', number: '555-555-5555', email: 'taka@myspace.com', street:'6539 Wilton Ave.', city:'Culver City', state:'CA', zipcode:'90234'},
+        {id:`${incrementID()}`, name: 'Tim', number: '555-555-5555', email: 'tim@netscape.com', street:'6539 Wilton Ave.', city:'Culver City', state:'CA', zipcode:'90234'},
+        {id:`${incrementID()}`, name: 'Patrick', number: '555-555-5555', email: 'patrick@live.com', street:'6539 Wilton Ave.', city:'Culver City', state:'CA', zipcode:'90234'},
+        {id:`${incrementID()}`, name: 'Jacques', number: '555-555-5555', email: 'jacques@aol.com', street:'6539 Wilton Ave.', city:'Culver City', state:'CA', zipcode:'90234'}
     ]
 
     //Create a status for the contact that determines circle color
@@ -58,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function(){
             // Create Information Div to be shown on name selection
             let infoContainer = document.createElement('div');
 
-            infoContainer.innerHTML = `<p><a href="mailto:${contacts[i].email}">${contacts[i].email}</a></p><br><p>${contacts[i].number}</p><br><p>${contacts[i].street}</p>${contacts[i].city}, ${contacts[i].state} ${contacts[i].zipcode}<p>`;
+            infoContainer.innerHTML = `<p><a href="mailto:${contacts[i].email}">${contacts[i].email}</a></p><br><p>${contacts[i].number}</p><br><p>${contacts[i].street}</p>${contacts[i].city} ${contacts[i].state} ${contacts[i].zipcode}<p>`;
 
             tdAllContactInfo.appendChild(infoContainer);
             
@@ -83,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function(){
             tdName.addEventListener('click', function(){
                 let selectedRow = document.getElementById(contacts[i].id)
                 if(selectedRow.classList.contains('selected')){
+                    tableBdy.classList.remove("selectedTable");
                     if(filter.value == 'contactEmail'){
                         showEmail();
                     }else if(filter.value == 'contactNumber'){
@@ -90,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     }
                 } else {
                     // This could be condensed and cleaned up. Feels extra heavy
+                tableBdy.setAttribute("class", "selectedTable");
                 addClass(contactInfo, 'hide');
                 removeClass(rowSelect, 'selected');
                 addClass(allRows, 'notSelected');
@@ -148,13 +151,15 @@ document.addEventListener("DOMContentLoaded", function(){
         removeClass(contactEmails, 'hide');
         removeClass(rowSelect, 'selected');
         removeClass(allRows, 'notSelected');
+        tableBdy.classList.remove("selectedTable");
     }
 
     function showNumber(){
         addClass(contactInfo, 'hide');
-        addClass(contactEmails, 'hide');
+        addClass(contactEmails, 'hide');``
         removeClass(contactNumbers, 'hide');
         removeClass(rowSelect, 'selected');
         removeClass(allRows, 'notSelected');
+        tableBdy.classList.remove("selectedTable");
     }
 });

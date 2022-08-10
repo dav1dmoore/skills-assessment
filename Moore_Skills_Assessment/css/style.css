@@ -7,23 +7,25 @@
 
 /*General Body Style Set */
 body {
-    background-color: grey;
+    background-color: #FFFFFF;
     color: white;
     display: flex;
     justify-content: space-around;
     margin: 50px;
+    font-family:'Lucida Sans', sans-serif;
 }
 
 
 /* Layout Placement */
 .container {
     width: 300px;
+    filter: drop-shadow(0px 2px 5px #7C7C7C);     
 }
 
 
 /* Header Style */
 #header {
-    background-color: #323232;
+    background: linear-gradient(#3d3d3d, #252525);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     display: flex;
@@ -32,6 +34,7 @@ body {
 
 #header > h1 {
     font-size: large;
+    font-weight:500;
     padding: 15px;
 }
 
@@ -69,7 +72,8 @@ body {
 /* Table Style */
 table {
     background-color: black;
-    border-collapse: collapse;
+    border-collapse:separate;
+    font-size: small;
 }
 tr {
     border-bottom: 1px solid #131313;
@@ -87,19 +91,23 @@ tr:nth-child(even){
 
 /* Table Class Styles */
 .size {
-    padding: 10px;
+    padding: 6px;
     text-align: center;
     width: 70%;
 }
 .name {
-    padding: 10px;
+    padding: 6px;
+    padding-right: 15px;
 }
 .number, .email{
     color: #4F4F4F !important;
     height:auto;
+    text-align: left;
+    padding-left: 20px;
 }
 .info {
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
 }
 
 
@@ -126,12 +134,21 @@ tr:nth-child(even){
 
 /* Selected Style */
 .selected {
-    background-color: #484848;
+    background-color: #494949;
     border-bottom: none !important;
 }
 
 .notSelected {
     background-color: black !important;
     border-bottom:none;
+    border-right: none;
     opacity: .2;
+}
+
+a {
+    color: #539D9E;
+}
+
+.selectedTable {
+    border-collapse: collapse;
 }

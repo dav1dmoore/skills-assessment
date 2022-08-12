@@ -1,14 +1,5 @@
-## Skills Assessment
+The skills assessent employs HTML, CSS, and JavaScript to render a general contacts page. The only place my solution does not match the image is the size of the column one in the selected table row. The size of the table data elements expand to the largest child within the parent table row. If I was going to do this project over I would consider employing divs, using grid to place them side by side, instead of a table markup to ensure an exact replica. Furthermore for ease of coding, I would employ jquery for easy, smooth transitioning. 
 
-Fork the repo and create the HTML, CSS, and JavaScript for the widget as described in the [Contact List image](https://github.com/14four/skills-assessment/blob/master/contactListUpdated.jpg).  It should take you about 3 hours, but you should try and complete it without taking an entire day. You will be asked to explain any places where your solution does not match the spec.  Please target modern browsers, do not use images, and bonus points for graceful degradation and legacy support solutions.  We wish to assess your CSS skills, so don't use a CSS Framework like Bootstrap or Foundation, they have their place, but this is not it. JQuery is not needed to complete this exercise, we would like to assess your Javascript skills without the use of this library. 
+All other functionality is present.
 
-Please code the page according to industry best practices and organize the assets as you would if delivering it to a client to integrate (not necessarily to deploy).
-
-Bonuses: Keep it simple, don't overuse JavaScript.  Prioritize modern browsers - graceful degredation is our friend.
-
-### Resources
-
-* [Contact List JPEG](https://github.com/14four/skills-assessment/blob/master/contactListUpdated.jpg)
-* [Contact List PSD](https://github.com/14four/skills-assessment/blob/master/contactListUpdated.psd?raw=true) (right click and save)
-
-![Screen](https://github.com/14four/skills-assessment/raw/master/contactListUpdated.jpg)
+https://dav1dmoore.github.io/skills-assessment/Moore_Skills_Assessment/skills-assessment

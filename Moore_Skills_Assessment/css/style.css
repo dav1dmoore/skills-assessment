@@ -110,6 +110,30 @@ tr:nth-child(even){
     padding-left: 20px;
 }
 
+.infoDvTop {
+    background-color: #484848;
+    left:100px;
+    padding: 10px;
+    padding-left:20px;
+    position: absolute;
+    text-align: -webkit-match-parent;
+    top: 1px;
+    width: -webkit-fill-available;
+}
+
+.infoDvBottom {
+    background-color: #484848;
+    left:100px;
+    padding: 10px;
+    padding-left:20px;
+    position: absolute;
+    text-align: -webkit-match-parent;
+    top: -30px;
+    /* width: -webkit-fill-available; */
+}
+
+
+
 
 /* Footer-Input Style */
 #footer {
@@ -134,8 +158,9 @@ tr:nth-child(even){
 
 /* Selected Style */
 .selected {
-    background-color: #494949;
+    background-color: #484848 !important;
     border-bottom: none !important;
+    position: relative;
 }
 
 .notSelected {

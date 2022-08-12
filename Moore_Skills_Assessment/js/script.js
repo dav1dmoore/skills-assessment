@@ -58,6 +58,12 @@ document.addEventListener("DOMContentLoaded", function(){
             
             // Create Information Div to be shown on name selection
             let infoContainer = document.createElement('div');
+            if( i > 5){
+                infoContainer.setAttribute("class", "infoDvTop");
+                infoContainer.setAttribute("style", "top: -75px;");
+            } else {
+                infoContainer.setAttribute("class", "infoDvTop");
+            }
 
             infoContainer.innerHTML = `<p><a href="mailto:${contacts[i].email}">${contacts[i].email}</a></p><br><p>${contacts[i].number}</p><br><p>${contacts[i].street}</p>${contacts[i].city} ${contacts[i].state} ${contacts[i].zipcode}<p>`;
 

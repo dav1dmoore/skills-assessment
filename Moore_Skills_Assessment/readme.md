@@ -2,4 +2,6 @@ The skills assessent employs HTML, CSS, and JavaScript to render a general conta
 
 All other functionality is present.
 
-https://dav1dmoore.github.io/skills-assessment/Moore_Skills_Assessment/skills-assessment
+Updated 8/11/22:
+
+This is the final submission. I utilized Steve's input to address the positioning on the elements to mirror the exact functionality requested. Furthermore, I added a small piece of javascript to adjust the style attribute on the bottom contacts so that the their information displays in the opposite direction, as the absolute positioning would have otherwise had the information content box escaping the body and covering the footer. Thank you for the chance to make improvements!
